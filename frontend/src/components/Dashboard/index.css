@@ -1,0 +1,46 @@
+.dashboard-container {
+    max-height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #000000;
+    margin: 20px;
+    scrollbar-width: thin;
+}
+
+.dashboard-heading {
+    color: #000000;
+    font-family: Jura;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.logout-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.logout-icon {
+    color: #FF0000;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.logout-icon:hover {
+    transform: scale(1.25);
+}
+
+@media screen and (min-width: 768px) {
+    .dashboard-container {
+        max-height: 600px;
+        width: 50%;
+        margin: 50px auto;
+    }
+}

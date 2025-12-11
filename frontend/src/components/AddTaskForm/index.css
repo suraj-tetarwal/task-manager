@@ -1,0 +1,85 @@
+.add-task-box {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #000000;
+  flex-wrap: wrap;
+}
+
+.task-input {
+  height: 50px;
+  min-width: 100%;
+  color: #000000;
+  font-size: 20px;
+  font-family: Jura;
+  font-weight: 800;
+  font-size: 16px;
+  border: 1px solid #868686;
+  outline: none;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.priority-select {
+  background: white;
+  color: #000000;
+  font-size: 16px;
+  font-family: Jura;
+  font-weight: 800;
+  border: 1px solid #868686;
+  border-radius: 6px;
+  outline: none;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.add-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #9ACD32;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: Jura;
+  font-weight: 800;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  flex-grow: 1;
+}
+
+.add-icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* mobile */
+@media (min-width: 768px) {
+  .add-task-box {
+    min-width: 50%;
+    max-width: 800px;
+    flex-direction: row;
+  }
+
+  .task-input {
+    min-width: 50%;
+    flex-grow: 1;
+    font-size: 20px;
+  }
+
+  .priority-select {
+    max-width: 100px;
+  }
+ 
+  .add-btn {
+    max-width: 100px;
+    width: 100%;
+  }
+}

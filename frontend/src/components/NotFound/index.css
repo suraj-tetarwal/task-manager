@@ -1,0 +1,20 @@
+.not-found-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found-title {
+    color: #000000;
+    font-size: 24px;
+    font-family: Jura;
+    font-weight: 800;
+}
+
+@media screen and (min-width: 768px) {
+    .not-found-title {
+        font-size: 36px;
+    }
+}

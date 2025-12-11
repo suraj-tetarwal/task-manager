@@ -1,0 +1,131 @@
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px #000000;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+/* LEFT SIDE */
+.task-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1;
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.task-text {
+  flex: 1;
+}
+
+/* TITLE */
+.task-title {
+  margin: 0;
+  font-size: 18px;
+  font-family: Jura;
+  font-weight: 800;
+}
+
+.task-done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* METADATA */
+.task-meta {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+/* Priority badges */
+.priority-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-family: Jura;
+  color: #fff;
+  font-weight: 800;
+}
+
+.priority-badge.low {
+  background: #4caf50;
+}
+
+.priority-badge.medium {
+  background: #ff9800;
+}
+
+.priority-badge.high {
+  background: #f44336;
+}
+
+/* Status badge */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-family: Jura;
+  font-weight: 800;
+}
+
+.status-badge.done {
+  background: #e2f8e6;
+  color: #2d7a32;
+}
+
+.status-badge.pending {
+  background: #fff4d7;
+  color: #b87a00;
+}
+
+/* RIGHT SIDE BUTTONS */
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Action buttons */
+.action-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 4px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.action-btn:hover {
+  background: rgba(0,0,0,0.08);
+}
+
+.delete-btn:hover {
+  background: rgba(255,0,0,0.1);
+}
+
+.edit-btn:hover {
+  background: rgba(0,0,150,0.1);
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .task-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-actions {
+    align-self: flex-end;
+  }
+}
