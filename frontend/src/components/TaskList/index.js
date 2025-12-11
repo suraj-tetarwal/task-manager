@@ -46,7 +46,7 @@ class TaskList extends Component {
     fetchTasks = async () => {
         const jwtToken = Cookies.get("jwtToken")
 
-        const url = "https://task-manager-1-b6ay.onrender.com"
+        const url = "https://task-manager-1-b6ay.onrender.com/tasks"
         const options = {
             method: "GET",
             headers: {
@@ -82,7 +82,7 @@ class TaskList extends Component {
 
         const toastId = toast.loading("Deleting...")
 
-        const url = `https://task-manager-1-b6ay.onrender.com/${id}`
+        const url = `https://task-manager-1-b6ay.onrender.com/tasks/${id}`
         const options = {
             method: "DELETE",
             headers: {
@@ -113,7 +113,7 @@ class TaskList extends Component {
         const {completed} = task
         const newStatus = !completed
 
-        const url = `https://task-manager-1-b6ay.onrender.com/${taskId}`
+        const url = `https://task-manager-1-b6ay.onrender.com/tasks/${taskId}`
         const options = {
             method: "PUT",
             headers: {
