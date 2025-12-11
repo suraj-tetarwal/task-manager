@@ -11,6 +11,7 @@ app.use(cors())
 app.use(express.json())
 
 const dbPath = path.join(__dirname, "Database", "taskManager.db");
+console.log("DB Path: ", dbPath);
 
 let db = null
 

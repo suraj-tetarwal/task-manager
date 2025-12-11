@@ -21,6 +21,7 @@ class AddTaskForm extends Component {
 
     handleAddTask = async event => {
         event.preventDefault()
+        console.log("Adding task")
         const {title, priority} = this.state
 
         const toastId = toast.loading("Adding new task")
@@ -41,7 +42,7 @@ class AddTaskForm extends Component {
 
         const jwtToken = Cookies.get("jwtToken")
 
-        const url = "http://localhost:5000/tasks/"
+        const url = "https://task-manager-1-b6ay.onrender.com/tasks/"
         const options = {
             method: "POST",
             headers: {

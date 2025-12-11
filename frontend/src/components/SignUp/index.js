@@ -49,7 +49,7 @@ class SignUp extends Component {
             password
         }
 
-        const url = "http://localhost:5000/sign-up/"
+        const url = "https://task-manager-1-b6ay.onrender.com/sign-up/"
         const options = {
             method: "POST",
             headers: {
