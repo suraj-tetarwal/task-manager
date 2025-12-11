@@ -1,0 +1,52 @@
+POST http://localhost:5000/sign-up/
+Content-Type: application/json 
+
+{
+    "username": "user001",
+    "email": "user001@gmail.com",
+    "password": "@user001"
+}
+
+###
+
+POSt http://localhost:5000/sign-in/
+Content-Type: application/json
+
+{
+    "email": "user001@gmail.com",
+    "password": "@user001"
+}
+
+###
+
+POST http://localhost:5000/tasks/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2NTQyNTA1NX0.4OYbFKYY8sf2ZMAMSdCkYxRPy9FFxT43zgzOk33TLZo
+
+{
+    "title": "Complete the project",
+    "priority": "HIGH",
+}
+
+###
+
+GET http://localhost:5000/tasks/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2NTQyNTA1NX0.4OYbFKYY8sf2ZMAMSdCkYxRPy9FFxT43zgzOk33TLZo
+
+
+###
+
+PUT http://localhost:5000/tasks/24/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2NTQyNTA1NX0.4OYbFKYY8sf2ZMAMSdCkYxRPy9FFxT43zgzOk33TLZo
+
+{
+    "title": "Update Task Two",
+    "priority": "LOW",
+    "completed": 1
+}
+
+###
+
+DELETE http://localhost:5000/tasks/23/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2NTQyNTA1NX0.4OYbFKYY8sf2ZMAMSdCkYxRPy9FFxT43zgzOk33TLZo
